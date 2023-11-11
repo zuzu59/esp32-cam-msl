@@ -1,7 +1,7 @@
 # esp32-cam-msl
 Petit système de caméras surveillance low cost à base de mini caméras ESP32-CAM
 
-zf231111.1709
+zf231111.1712
 
 ## Buts
 Construire un système de surveillance low cost à base de mini caméras ESP32-CAM !
@@ -26,10 +26,26 @@ dans une console ssh. Ce script va prendre une photos tous les x secondes
 
 
 
+## Sources
+https://www.rickmakes.com/create-timelapse-from-ip-camera-using-curl-wget-and-ffmpeg/
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
 
 les reste du Readme est en cours de rédaction ! zf231111.1705
 
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
 
 
