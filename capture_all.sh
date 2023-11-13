@@ -1,6 +1,6 @@
 #!/bin/bash
 #Petit script pour prendre une image de toutes les mini caméras esp32-cam
-#zf231113.1116
+#zf231113.1558
 
 zIMAGE_FOLDER="./images"
 zYEAR=`date +%Y` 
@@ -15,6 +15,6 @@ echo -e $zTarget
 #mkdir -p $zTarget
 
 
-./capture_one.sh $zTarget/bois 192.168.0.67 $zTIME.jpg
-./capture_one.sh $zTarget/metal 192.168.0.67 $zTIME.jpg
+./capture_one.sh $zTarget/bois 192.168.8.60 $zTIME.jpg
+#./capture_one.sh $zTarget/metal 192.168.0.67 $zTIME.jpg
 
