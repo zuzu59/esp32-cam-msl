@@ -1,6 +1,8 @@
 #!/bin/bash
 #Petit script pour tester la réalisation d'un petit film à base d'images pour tous les espaces du MsL
-#zf231113.1147
+#zf231113.1202
+#
+# Sources: https://www.rickmakes.com/create-timelapse-from-ip-camera-using-curl-wget-and-ffmpeg/
 
 
 zIMAGE_FOLDER="./images"
