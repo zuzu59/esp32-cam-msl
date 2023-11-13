@@ -1,7 +1,20 @@
 #!/bin/bash
-#Petit script pour tester la prise d'images d'une mini caméra esp32-cam
-#zf231111.1654
+#Petit script pour prendre une image de toutes les mini caméras esp32-cam
+#zf231113.1116
+
+zIMAGE_FOLDER="./images"
+zYEAR=`date +%Y` 
+zMONTH=`date +%m`
+zDAY=`date +%d`
+zTIME=`date +%H%M%S` 
+
+zTarget=$zIMAGE_FOLDER/$zYEAR/$zMONTH/$zDAY
+
+echo -e $zTarget
+
+#mkdir -p $zTarget
 
 
-while :; do wget -O "./images/cam_67_$(date +"%Y%m%d.%H%M%S").jpg" http://192.168.0.67/1600x1200.jpg; sleep 3; done
+./capture_one.sh $zTarget/bois 192.168.0.67 $zTIME.jpg
+./capture_one.sh $zTarget/metal 192.168.0.67 $zTIME.jpg
 
