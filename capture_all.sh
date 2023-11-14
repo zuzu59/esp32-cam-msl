@@ -1,20 +1,22 @@
 #!/bin/bash
 #Petit script pour prendre une image de toutes les mini caméras esp32-cam
-#zf231113.1558
+#zf231114.1059
 
-zIMAGE_FOLDER="./images"
+
+
+zDATA_FOLDER=./data
+zIMAGES_FOLDER=$zDATA_FOLDER/images
+zACTUAL_FOLDER=$zDATA_FOLDER/actual
+
 zYEAR=`date +%Y` 
 zMONTH=`date +%m`
 zDAY=`date +%d`
 zTIME=`date +%H%M%S` 
 
-zTarget=$zIMAGE_FOLDER/$zYEAR/$zMONTH/$zDAY
+zTARGET=$zIMAGES_FOLDER/$zYEAR/$zMONTH/$zDAY
 
-echo -e $zTarget
+echo -e $zTARGET
 
-#mkdir -p $zTarget
-
-
-./capture_one.sh $zTarget/bois 192.168.8.60 $zTIME.jpg
-#./capture_one.sh $zTarget/metal 192.168.0.67 $zTIME.jpg
-
+zESPACE=bois
+./capture_one.sh $zTARGET/$zESPACE 192.168.8.60 $zTIME.jpg
+cp $zTARGET/$zESPACE/$zTIME.jpg $zACTUAL_FOLDER/$zESPACE.jpg

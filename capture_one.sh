@@ -1,6 +1,6 @@
 #!/bin/bash
 # Petit script qui ne fait que de prendre une image d'une mini caméra esp32-cam
-# zf231113.1126
+# zf231114.1053
 
 #test si l'argument est vide
 if [ -z "$1" ]
@@ -21,8 +21,6 @@ Nom de l'image: $3
 "
 
 mkdir -p $1
-
 wget -O $1/$3 http://$2/1600x1200.jpg
-
 
 
