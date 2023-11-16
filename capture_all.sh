@@ -1,6 +1,6 @@
 #!/bin/bash
 #Petit script pour prendre une image de toutes les mini caméras esp32-cam
-#zf231115.1913
+#zf231116.1835
 
 
 zAPP_FOLDER=$(/usr/bin/dirname $0)
@@ -32,6 +32,16 @@ cp $zTARGET/$zESPACE/$zTIME.jpg $zACTUAL_FOLDER/$zESPACE.jpg
 zESPACE=social
 $zAPP_FOLDER/capture_one.sh $zTARGET/$zESPACE 192.168.8.63 $zTIME.jpg
 cp $zTARGET/$zESPACE/$zTIME.jpg $zACTUAL_FOLDER/$zESPACE.jpg
+
+
+zESPACE=mosaic
+$zAPP_FOLDER/make_mosaic.sh $zTARGET $zTIME
+cp $zTARGET/$zESPACE/$zTIME.jpg $zACTUAL_FOLDER/$zESPACE.jpg
+
+
+
+
+
 
 echo -e "
 
