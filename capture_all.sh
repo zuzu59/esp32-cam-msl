@@ -1,10 +1,11 @@
 #!/bin/bash
 #Petit script pour prendre une image de toutes les mini caméras esp32-cam
-#zf231116.1835
+#zf231116.1835, zf240926.1637
 
 
 zAPP_FOLDER=$(/usr/bin/dirname $0)
-zDATA_FOLDER=$zAPP_FOLDER/data
+#zDATA_FOLDER=$zAPP_FOLDER/data
+zDATA_FOLDER="/mnt/data"
 zIMAGES_FOLDER=$zDATA_FOLDER/images
 zACTUAL_FOLDER=$zDATA_FOLDER/actual
 
@@ -17,20 +18,24 @@ zTARGET=$zIMAGES_FOLDER/$zYEAR/$zMONTH/$zDAY
 
 echo -e $zTARGET
 
+
+
+
+
 zESPACE=bois
-$zAPP_FOLDER/capture_one.sh $zTARGET/$zESPACE 192.168.8.60 $zTIME.jpg
+$zAPP_FOLDER/capture_one.sh $zTARGET/$zESPACE esp-cam-msl4.local $zTIME.jpg
 cp $zTARGET/$zESPACE/$zTIME.jpg $zACTUAL_FOLDER/$zESPACE.jpg
 
 zESPACE=metal
-$zAPP_FOLDER/capture_one.sh $zTARGET/$zESPACE 192.168.8.61 $zTIME.jpg
+$zAPP_FOLDER/capture_one.sh $zTARGET/$zESPACE esp-cam-msl1.local $zTIME.jpg
 cp $zTARGET/$zESPACE/$zTIME.jpg $zACTUAL_FOLDER/$zESPACE.jpg
 
 zESPACE=laser
-$zAPP_FOLDER/capture_one.sh $zTARGET/$zESPACE 192.168.8.62 $zTIME.jpg
+$zAPP_FOLDER/capture_one.sh $zTARGET/$zESPACE esp-cam-msl2.local $zTIME.jpg
 cp $zTARGET/$zESPACE/$zTIME.jpg $zACTUAL_FOLDER/$zESPACE.jpg
 
 zESPACE=social
-$zAPP_FOLDER/capture_one.sh $zTARGET/$zESPACE 192.168.8.63 $zTIME.jpg
+$zAPP_FOLDER/capture_one.sh $zTARGET/$zESPACE esp-cam-msl3.local $zTIME.jpg
 cp $zTARGET/$zESPACE/$zTIME.jpg $zACTUAL_FOLDER/$zESPACE.jpg
 
 
