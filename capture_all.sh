@@ -1,11 +1,11 @@
 #!/bin/bash
 #Petit script pour prendre une image de toutes les mini caméras esp32-cam
-#zf231116.1835, zf240926.1637
+#zf231116.1835, zf240926.1703
 
 
 zAPP_FOLDER=$(/usr/bin/dirname $0)
 #zDATA_FOLDER=$zAPP_FOLDER/data
-zDATA_FOLDER="/mnt/data"
+zDATA_FOLDER=/mnt/data
 zIMAGES_FOLDER=$zDATA_FOLDER/images
 zACTUAL_FOLDER=$zDATA_FOLDER/actual
 

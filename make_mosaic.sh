@@ -1,6 +1,6 @@
 #!/bin/bash
 # Petit script pour faire une mosaïque avec les images des caméras
-# zf231116.1837
+# zf231116.1837, zf240926.1653
 
 #test si l'argument est vide
 if [ -z "$1" ]

@@ -1,7 +1,7 @@
 # esp32-cam-msl
 Petit système de caméras surveillance low cost à base de mini caméras ESP32-CAM
 
-zf231113.1342
+zf231113.1342, zf240926.1705
 
 ## Buts
 Construire un système de surveillance low cost à base de mini caméras ESP32-CAM !
@@ -15,6 +15,14 @@ Une moulinette va interroger les mini caméras de surveillance pour prendre une 
 * Avoir une machine Linux
 * Avoir des mini caméras ESP32-CAM
 * Avoir Arduino IDE pour flasher le firmware
+
+
+## Installation
+Il faut installer en autre ceci:
+
+```
+sudo update ; sudo apt install imagemagick lighttpd
+```
 
 
 ## Utilisation
