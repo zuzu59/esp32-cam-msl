@@ -1,7 +1,7 @@
 # esp32-cam-msl
 Petit système de caméras surveillance low cost à base de mini caméras ESP32-CAM
 
-zf231113.1342, zf240927.1947
+zf231113.1342, zf240927.2022
 
 ## Buts
 Construire un système de surveillance low cost à base de mini caméras ESP32-CAM !
@@ -21,11 +21,11 @@ Une moulinette va interroger les mini caméras de surveillance pour prendre une 
 Il faut installer en autre ceci:
 
 ```
-sudo apt update ; sudo apt install imagemagick lighttpd
+sudo apt update ; sudo apt install imagemagick lighttpd ffmpeg
 ```
 ou
 ```
-apt update ; apt install sudo imagemagick lighttpd
+apt update ; apt install sudo imagemagick lighttpd ffmpeg
 ```
 
 
