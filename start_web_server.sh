@@ -4,12 +4,19 @@
 #
 # ATTENTION: il faut modifier le port et le dossier racine dans le fichier $zAPP_FOLDER/lighttpd.conf !
 #
-#zf231211.1756, zf240731.1556, zf240926.1702
+#zf231211.1756, zf240731.1556, zf240927.1919
 
 
 zAPP_FOLDER=$(/usr/bin/dirname $0)
 zDATA_FOLDER=/mnt/data
 
+
+echo -e "
+zAPP_FOLDER: $zAPP_FOLDER
+zDATA_FOLDER: $zDATA_FOLDER
+"
+
+sudo pkill lighttpd
 
 # permet de rendre non fonctionnel le directory browsing dans la racine
 # afin de diminuer la surface d'attaque
