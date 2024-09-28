@@ -1,6 +1,6 @@
 #!/bin/bash
 #Petit script pour prendre une image de toutes les mini caméras esp32-cam
-#zf231116.1835, zf240928.1653
+#zf231116.1835, zf240928.1722
 
 
 zAPP_FOLDER=$(/usr/bin/dirname $0)
@@ -51,7 +51,6 @@ echo -e "
 Si jamais pour info:
 
 crontab -e
-*/1 * * * * /root/dev/esp32-cam-msl/capture_all.sh  (capture une image toutes les 1 minutes)
-
+*/1 * * * * /root/dev/esp32-cam-msl/capture_all.sh                      #(capture une image toutes les 1 minutes)
 "
 

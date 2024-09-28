@@ -4,7 +4,7 @@
 #
 # ATTENTION: il faut modifier le port et le dossier racine dans le fichier $zAPP_FOLDER/lighttpd.conf !
 #
-#zf231211.1756, zf240731.1556, zf240927.1919
+#zf231211.1756, zf240731.1556, zf240928.1717
 
 
 zAPP_FOLDER=$(/usr/bin/dirname $0)
@@ -30,8 +30,7 @@ echo -e "
 Si jamais pour info:
 
 crontab -e
-@reboot  sleep 30 && /home/ubuntu/dev/esp32-cam-st-luc/start_web_server.sh
-
+@reboot  sleep 30 && /root/dev/esp32-cam-st-luc/start_web_server.sh     # Démarre le serveur web au boot de la machine
 Et pour l'arrêter facilement il faut faire: 
 
 sudo pkill lighttpd

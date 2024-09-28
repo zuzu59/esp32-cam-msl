@@ -1,6 +1,6 @@
 #!/bin/bash
 # Petit script pour la réalisation d'un petit film à base d'images pour tous les espaces du MsL
-# zf231116.1859, zf240928.1701
+# zf231116.1859, zf240928.1716
 #
 # Sources: https://www.rickmakes.com/create-timelapse-from-ip-camera-using-curl-wget-and-ffmpeg/
 
@@ -60,6 +60,5 @@ echo -e "
 Si jamais pour info:
 
 crontab -e
-*/5 * * * * /home/ubuntu/dev/esp32-cam-msl/make_video_all.sh  (réalise une vidéo toutes les 5 minutes)
-
+*/5 * * * * /root/dev/esp32-cam-msl/make_video_all.sh                   #(réalise une vidéo toutes les 5 minutes)
 "
