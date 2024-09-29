@@ -4,7 +4,7 @@
 #
 # ATTENTION: il faut modifier le port et le dossier racine dans le fichier $zAPP_FOLDER/lighttpd.conf !
 #
-#zf231211.1756, zf240731.1556, zf240929.1544
+#zf231211.1756, zf240731.1556, zf240929.1752
 #
 # Remarques:
 # Pour que le directory browsing soit responsive sur un smartphone, il faut modifier le CSS du directory-browsing !
