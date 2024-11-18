@@ -4,7 +4,7 @@
 #
 # ATTENTION: il faut modifier le port et le dossier racine dans le fichier $zAPP_FOLDER/lighttpd.conf !
 #
-#zf231211.1756, zf240731.1556, zf240929.1752
+#zf231211.1756, zf240731.1556, zf240929.1752, zf241118.1137
 #
 # Remarques:
 # Pour que le directory browsing soit responsive sur un smartphone, il faut modifier le CSS du directory-browsing !
@@ -39,7 +39,7 @@ cp $zAPP_FOLDER/index.html $zDATA_FOLDER/index.html
 # permet d'être responsive sur un smartphone
 cp $zAPP_FOLDER/custom.css $zDATA_FOLDER/custom.css
 
-sudo lighttpd -f $zAPP_FOLDER/lighttpd.conf
+sudo /usr/sbin/lighttpd -f $zAPP_FOLDER/lighttpd.conf
 
 
 echo -e "
@@ -47,7 +47,7 @@ echo -e "
 Si jamais pour info:
 
 crontab -e
-@reboot  sleep 30 && /root/dev/esp32-cam-st-luc/start_web_server.sh     # Démarre le serveur web au boot de la machine
+@reboot  sleep 30 && /root/dev/esp32-cam-msl/start_web_server.sh     # Démarre le serveur web au boot de la machine
 
 Et pour l'arrêter, il faut faire: 
 
